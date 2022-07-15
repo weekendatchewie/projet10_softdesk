@@ -28,5 +28,6 @@ class Project(models.Model):
     type = models.CharField(max_length=30, choices=TYPE_CHOICES)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
+
 class Contributor(models.Model):
     pass
