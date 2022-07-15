@@ -27,3 +27,6 @@ class Project(models.Model):
     description = models.TextField(max_length=2048, blank=True)
     type = models.CharField(max_length=30, choices=TYPE_CHOICES)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+class Contributor(models.Model):
+    pass
